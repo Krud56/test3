@@ -4,17 +4,8 @@
   box-sizing: border-box;
 }
 
-.parent {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction:row;
-  justify-content: center;
-  -webkit-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
+
+
 
 .div1 {
   background-color: red;
@@ -64,7 +55,9 @@
 
 .hey {
   width: 40%;
-  margin: 50px auto;
+  display: block;
+  float: left;
+  margin: 50px 5%;
   border: 1px solid black;
   /*veee jadd a nikad dehje niche je be border dekhay che e na dekhadvi hoi to*/
   display: grid;
@@ -73,9 +66,11 @@
 }
 
 .doby {
-  float: right;
+  display: block;
+  float: left;
+
   width: 40%;
-  margin: 50px auto;
+  margin: 50px 5%;
   border: 1px solid grey;
   display: grid;
   grid-template-rows: 30px 30px 30px 30px 30px 30px;
@@ -83,21 +78,17 @@
 }
 
 @media (max-width:1122px) {
-  .parent {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction:column;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-  }
 
+.parent{
+  text-align: center;
+
+}
   .hey {
     text-align: center;
     width: 80%;
     height: 10%;
+
+    margin-left: 10%;
     display: grid;
     grid-template-rows: 40px;
     grid-template-columns: 70px repeat(1, 1fr);
@@ -107,6 +98,9 @@
     text-align: center;
     width: 80%;
     height: 10%;
+    margin-left: 10%;
+
+
     display: grid;
     grid-template-rows: 40px;
     grid-template-columns: 70px repeat(1, 1fr);
