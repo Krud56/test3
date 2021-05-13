@@ -1,0 +1,109 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent{
+
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
+       /* NEW - Chrome */
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction:row;
+  align-content: center;
+  -webkit-align-content:center;   /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.div1{
+  background-color: red;
+  grid-column: 1/-1;
+  border: 1px solid black;
+}
+.div2{
+  border: 1px solid black;
+}
+.div3{
+  border: 1px solid black;
+}
+.div4{
+  border: 1px solid black;
+}
+.div5{
+  border: 1px solid black;
+}
+.div6{
+  border: 1px solid black;
+}
+.div7{
+  border: 1px solid black;
+}
+.div8{
+  border: 1px solid black;
+}
+.div9{
+  border: 1px solid black;
+}
+.div10{
+  border: 1px solid black;
+}
+.div11{
+  border: 1px solid black;
+}
+
+.hey{
+   width: 40%;
+   margin: 50px auto;
+   border: 1px solid black;/*veee jadd a nikad dehje niche je be border dekhay che e na dekhadvi hoi to*/
+   display: grid;
+   grid-template-rows: 30px 30px 30px 30px 30px 30px;
+   grid-template-columns: repeat(1, 1fr) 450px;
+ }
+.doby{
+  float: right;
+   width: 40%;
+   margin: 50px auto;
+   border: 1px solid grey;
+   display: grid;
+   grid-template-rows: 30px 30px 30px 30px 30px 30px;
+   grid-template-columns: repeat(1, 1fr) 450px;
+}
+@media (max-width:1122px)
+  {
+    .parent{
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+
+    }
+    .hey
+    {
+      text-align: center;
+
+      width: 80%;
+      height: 10%;
+      display: grid;
+      grid-template-rows: 40px;
+      grid-template-columns: 70px repeat(1,1fr);
+    }
+    .doby
+    {
+      text-align: center;
+
+      width: 80%;
+      height: 10%;
+      display: grid;
+      grid-template-rows: 40px;
+      grid-template-columns: 70px repeat(1,1fr);
+    }
+    .div1{
+      display: grid;
+      text-align: center;
+    }
+
+
+  }
